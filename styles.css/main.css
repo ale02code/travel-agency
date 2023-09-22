@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: ; */
+}
+
+/* Title image */
+.container_title-image {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: -10;
+  overflow: hidden;
+}
+
+.title-image {
+  height: 100%;
+  width: 100%;
+  filter: brightness(80%);
+  object-fit: cover;
+}
+
+/* Navegation */
