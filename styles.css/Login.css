@@ -1,0 +1,155 @@
+/* :root {
+  --color-footer: #053B50;
+  --color-botton: #176B87;
+  --color-texts: #ffaa11;
+  --color-texts-seconds: #dfdbdb;
+  --color-texts-thrids: #383838;
+  --color-change-background: #EEEEEE;
+  --container-with: 80%;
+  --padding-login: 15px;
+} */
+
+.content_window-login-off {
+  display: none;
+}
+
+.content_window-login-on {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  background-color: rgba(0, 0, 0, .7);
+  overflow: hidden;
+  z-index: 200;
+}
+
+.login-text {
+  background-color: var(--color-botton);
+  border-radius: 4px;
+  padding: 2px 6px;
+  color: #ffffff;
+  list-style-type: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.window-login {
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 50%;
+  height: 75%;
+  background-color: #176B87;
+  border-radius: 15px;
+  position: relative;
+}
+
+.content_image-login {
+  width: 100%;
+  height: 100%;
+}
+
+.content_image-login>img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.login {
+  padding: var(--padding-login);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.button_back-login {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #fff;
+  padding: var(--padding-login);
+  cursor: pointer;
+}
+
+.button_back-login i {
+  padding: 0px 2px;
+}
+
+.title-login {
+  width: 100%;
+  padding: var(--padding-login);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-login h2 {
+  font-size: 3rem;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.form-login label {
+  color: var(--color-texts-seconds);
+  display: block;
+  padding-bottom: 2px;
+}
+
+.recover-password {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.form-login a {
+  color: var(--color-texts-seconds);
+  font-size: 16px;
+}
+
+.form-login input {
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 3px 2px;
+  outline: none;
+  border: none;
+}
+
+.send-login {
+  width: 100%;
+  padding: 4px;
+  color: #fff;
+  background-color: var(--color-footer);
+  border: none;
+  cursor: pointer;
+  margin: 2px 0;
+  margin-bottom: 12px;
+}
+
+.break-line {
+  width: 100%;
+  border-bottom: 2px solid #fff;
+  margin-bottom: 12px;
+}
+
+.social-login {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+
+.social-icon>i {
+  font-size: 1.1rem;
+  color: #fff;
+}
+
+.social-icon {
+  padding: 10px;
+  background-color: var(--color-footer);
+
+}

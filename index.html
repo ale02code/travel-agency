@@ -7,6 +7,7 @@
   <title>Responsive Design</title>
   <link rel="shortcut icon" href="imgs/icon.ico" type="image/x-icon">
   <link rel="stylesheet" href="styles.css/main.css">
+  <link rel="stylesheet" href="styles.css/Login.css">
   <!-- Google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,63 +18,26 @@
 
 <body>
   <div class="content_window-login-off">
-    <div class="window-login">
-      <section class="container_image-login">
-        <figure class="content_image-login">
-          <img src="imgs/Place 5.jpg" alt="Login-image">
-        </figure>
-      </section>
-      <section class="login">
-        <div class="button_back-login">
-          <p class="back-login">Back<i class="bi bi-arrow-bar-right"></i></p>
-        </div>
-        <div class="title-login">
-          <h2>Login</h2>
-        </div>
-        <form action="" class="form-login">
-          <label for="email">Write your e-mail</label>
-          <input type="email" required>
-          <label for="password">Write your password</label>
-          <input type="password" required>
-          <div class="recover-password">
-            <a href="#">have you forgotten your password?</a>
-          </div>
-          <button class="send-login">Send</button>
-        </form>
-        <div class="break-line"></div>
-        <div class="social-login">
-          <div class="social-icon">
-            <i class="bi bi-google"></i>
-          </div>
-          <div class="social-icon">
-            <i class="bi bi-twitter-x"></i>
-          </div>
-          <div class="social-icon">
-            <i class="bi bi-facebook"></i>
-          </div>
-        </div>
-      </section>
-    </div>
   </div>
 
   <header>
     <figure class="container_title-image">
-      <img src="imgs/Title image.jpg" alt="title-image" class="title-image">
+      <img class="title-image" id="home" src="imgs/Title image.jpg" alt="title-image">
     </figure>
 
     <div class="container-nav">
       <div class="content-nav">
         <nav class="main-nav">
           <figure class="container_present-icon">
-            <img src="imgs/icon-main.png" alt="icon-main" class="present-icon">
+            <img class="present-icon" src="imgs/icon-main.png" alt="icon-main">
           </figure>
           <ul class="container_item-list">
-            <li class="item-list"><a href="#">Home</a></li>
-            <li class="item-list"><a href="#">Explore</a></li>
-            <li class="item-list"><a href="#">Popular</a></li>
-            <li class="item-list"><a href="#">Blogs</a></li>
-            <li class="item-list"><a href="#">Register</a></li>
-            <li class="item-list"><a href="#" class="login-text">Login</a></li>
+            <li class="item-list"><a href="#home">Home</a></li>
+            <li class="item-list"><a href="#about-us">About us</a></li>
+            <li class="item-list"><a href="#explore">Explore</a></li>
+            <li class="item-list"><a href="#popular">Popular</a></li>
+            <li class="item-list"><a>Register</a></li>
+            <li id="" class="login-text">Login</li>
           </ul>
         </nav>
       </div>
@@ -83,20 +47,20 @@
       <section class="content_general-information">
         <h1>Enjoy the holidays together with us</h1>
         <p>Discover the world with our travel agency! Explore breathtaking destinations, from pristine beaches to
-          bustling cities. Our experienced team ensures seamless journeys. Tailored itineraries, exceptional service,
+          bustling cities
           and unforgettable adventures await. Start your journey today and let us make your travel dreams a reality!</p>
         <div class="content-button-general-information">
-          <button><a href="#">Read more</a></button>
+          <button><a href="#blogs">Read more</a></button>
         </div>
       </section>
     </div>
   </header>
 
-  <section class="about-us">
+  <section class="about-us" id="about-us">
     <div class="content-about-us">
       <div class="visualizers-about-us">
         <img src="imgs/Place 2.jpg" alt="complement-video">
-        <video class="video-about-us" src="videos/Jum-water.mp4" autoplay></video>
+        <video class="video-about-us" src="videos/Jum-water.mp4"></video>
       </div>
       <div class="texts-about-us">
         <h5>About us</h5>
@@ -109,7 +73,7 @@
     </div>
   </section>
 
-  <section class="container-explore">
+  <section class="container-explore" id="explore">
     <div class="explore-content">
       <div class="explore">
         <h5>Explore</h5>
@@ -164,7 +128,7 @@
     </div>
   </section>
 
-  <main class="destination">
+  <main class="destination" id="popular">
     <div class="text-destination">
       <h5>Pupular</h5>
       <h3>Popular Destinations</h3>
@@ -211,7 +175,7 @@
     </div>
   </main>
 
-  <section class="our-blogs">
+  <section class="our-blogs" id="blogs">
     <div class="our-blog-content">
       <div class="text-blogs-present">
         <h5>Blog</h5>
@@ -277,28 +241,28 @@
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam enim reiciendis neque quisquam asperiores
             harum fugiat dolorem iusto eos dolore!</p>
         </div>
-       <div class="space-information">
-         <div class="company-footer">
-           <h6>Company</h6>
-           <p>Blogs</p>
-           <p>Explore</p>
-           <p>About us</p>
-           <p>Beatiful places</p>
-         </div>
-         <div class="contact-me-footer">
-           <h6>Contact me</h6>
-           <p>chchacon02@gmail.com</p>
-           <p>+503 72878961</p>
-         </div>
-         <div class="social-media-footer">
-           <h6>Social Media</h6>
-           <div class="social-link-links">
-            <p><a href="https://github.com/Blade-24"><i class="bi bi-github"></i></a></p>
-            <p><a href="https://twitter.com/Tsk_002_"><i class="bi bi-twitter-x"></i></a></p>
-            <p><a href="https://wa.me/72878961"><i class="bi bi-whatsapp"></i></a></p>
-           </div>
-         </div>
-       </div>
+        <div class="space-information">
+          <div class="company-footer">
+            <h6>Company</h6>
+            <p>Blogs</p>
+            <p>Explore</p>
+            <p>About us</p>
+            <p>Beatiful places</p>
+          </div>
+          <div class="contact-me-footer">
+            <h6>Contact me</h6>
+            <p>chchacon02@gmail.com</p>
+            <p>+503 72878961</p>
+          </div>
+          <div class="social-media-footer">
+            <h6>Social Media</h6>
+            <div class="social-link-links">
+              <p><a href="https://github.com/Blade-24" target="_blank"><i class="bi bi-github"></i></a></p>
+              <p><a href="https://twitter.com/Tsk_002_" target="_blank"><i class="bi bi-twitter-x"></i></a></p>
+              <p><a href="https://wa.me/72878961" target="_blank"><i class="bi bi-whatsapp"></i></a></p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <div class="container_credits-footer">
@@ -306,12 +270,11 @@
         <h6>Design and developed made by Christopher Chacón</h6>
       </div>
     </div>
-
   </footer>
 
   <script src="scripts.js/login.js"></script>
+  <script src="scripts.js/nav-bar-scroll.js"></script>
   <script src="scripts.js/observer-video.js"></script>
-  <script src="scripts.js/galley-efect-explore.js"></script>
 </body>
 
 </html>
