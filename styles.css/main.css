@@ -229,7 +229,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  align-items: center;
 }
 
 .explore>h5 {
@@ -387,6 +386,12 @@ body {
   width: 250px;
   object-fit: cover;
   border-radius: 15px;
+  filter: contrast(75%);
+  transition: filter .3s;
+}
+
+.content_picture-popular>img:hover {
+  filter: contrast(100%);
 }
 
 .content_picture-popular {

@@ -13,7 +13,7 @@ const ContentImageLogin = document.createElement('figure');
 ContentImageLogin.classList.add("content_image-login");
 
 const ImageLogin = document.createElement('img');
-ImageLogin.src = "imgs/Place 5.jpg";
+ImageLogin.src = "imgs/Place 5.webp";
 
 const Login = document.createElement('section');
 Login.classList.add("login");
@@ -57,6 +57,7 @@ const RecoverPassword = document.createElement('div');
 RecoverPassword.classList.add("recover-password");
 
 const RecoverPasswordLink = document.createElement('a');
+RecoverPasswordLink.href = "#home";
 RecoverPasswordLink.textContent = "Have you forgotten your password?";
 
 const SendForm = document.createElement('button');
