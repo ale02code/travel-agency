@@ -31,10 +31,12 @@
     <div class="container-nav">
       <div class="content-nav">
         <nav class="main-nav">
-          <figure class="container_present-icon">
+          <figure id="container-logo" class="container_present-icon">
             <img class="present-icon" src="imgs/icon-main.avif" alt="icon-main">
           </figure>
-          <ul class="container_item-list">
+          <p id="open-navbar" class="container-open-navbar show-phone"><i class="bi bi-list"></i></p>
+            <p id="close-navbar" class="container-close-navbar show-phone"><i class="bi bi-x"></i></p>
+          <ul id="menu" class="container_item-list">
             <li class="item-list"><a href="#home">Home</a></li>
             <li class="item-list"><a href="#about-us">About us</a></li>
             <li class="item-list"><a href="#explore">Explore</a></li>
@@ -131,46 +133,48 @@
   </section>
 
   <main class="destination" id="popular">
-    <div class="text-destination">
-      <h5>Pupular</h5>
-      <h3>Popular Destinations</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis suscipit laborum cupiditate beatae
-        exercitationem accusantium maiores perferendis molestias recusandae itaque.</p>
-    </div>
-    <div class="gallery-popular">
-      <div class="content_picture-popular">
-        <img src="imgs/Place 6.webp" alt="picture-popular">
-        <div class="show-price">
-          <div class="description-place-popular">
-            <h6>Name of the place</h6>
-            <p>Lorem ipsum dolor sit amet consectetur.</p>
-          </div>
-          <div class="price-place-popular">
-            <p>$1000</p>
+    <div class="destination-content">
+      <div class="text-destination">
+        <h5>Popular</h5>
+        <h3>Popular Destinations</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis suscipit laborum cupiditate beatae
+          exercitationem accusantium maiores perferendis molestias recusandae itaque.</p>
+      </div>
+      <div class="gallery-popular">
+        <div class="content_picture-popular">
+          <img src="imgs/Place 6.webp" alt="picture-popular">
+          <div class="show-price">
+            <div class="description-place-popular">
+              <h6>Name of the place</h6>
+              <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+            <div class="price-place-popular">
+              <p>$1000</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="content_picture-popular">
-        <img src="imgs/place 7.webp" alt="picture-popular">
-        <div class="show-price">
-          <div class="description-place-popular">
-            <h6>Name of the place</h6>
-            <p>Lorem ipsum dolor sit amet consectetur.</p>
-          </div>
-          <div class="price-place-popular">
-            <p>$1000</p>
+        <div class="content_picture-popular">
+          <img src="imgs/place 7.webp" alt="picture-popular">
+          <div class="show-price">
+            <div class="description-place-popular">
+              <h6>Name of the place</h6>
+              <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+            <div class="price-place-popular">
+              <p>$1000</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="content_picture-popular">
-        <img src="imgs/place 8.webp" alt="picture-popular">
-        <div class="show-price">
-          <div class="description-place-popular">
-            <h6>Name of the place</h6>
-            <p>Lorem ipsum dolor sit amet consectetur.</p>
-          </div>
-          <div class="price-place-popular">
-            <p>$1000</p>
+        <div class="content_picture-popular">
+          <img src="imgs/place 8.webp" alt="picture-popular">
+          <div class="show-price">
+            <div class="description-place-popular">
+              <h6>Name of the place</h6>
+              <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+            <div class="price-place-popular">
+              <p>$1000</p>
+            </div>
           </div>
         </div>
       </div>
@@ -275,6 +279,7 @@
   </footer>
 
   <script src="scripts.js/login.js"></script>
+  <script src="scripts.js/nav-bar-phone.js"></script>
   <script src="scripts.js/nav-bar-scroll.js"></script>
   <script src="scripts.js/observer-video.js"></script>
 </body>
