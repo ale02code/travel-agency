@@ -151,5 +151,18 @@
 .social-icon {
   padding: 10px;
   background-color: var(--color-footer);
+}
 
+@media (max-width:575px) {
+  .window-login {
+    width: 90vw;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    padding: 35px 0px;
+  }
+
+  .content_image-login {
+    display: none;
+  }
 }

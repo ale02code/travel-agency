@@ -131,6 +131,10 @@ body {
   color: var(--color-texts-seconds);
 }
 
+.content-button-general-information {
+  padding: 8px;
+}
+
 .content-button-general-information>button {
   border: none;
   border-radius: 5px;
@@ -168,7 +172,7 @@ body {
   position: relative;
 }
 
-.visualizers-about-us img {
+.first-image-about-us {
   width: 80%;
   height: 75%;
   position: absolute;
@@ -178,7 +182,7 @@ body {
   border-radius: 25px;
 }
 
-.visualizers-about-us video {
+.second-image-about-us {
   width: 70%;
   height: 75%;
   position: absolute;
@@ -513,7 +517,7 @@ body {
 
 .card-information-blog p {
   color: var(--color-texts-thrids);
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .card-information-blog a {
@@ -526,6 +530,8 @@ body {
   width: 100vw;
   overflow: hidden;
 }
+
+
 
 .content-footer {
   width: var(--container-with);
@@ -783,12 +789,13 @@ body {
   /* Footer */
   .footer {
     width: 100vw;
-    padding: 20px 10px;
+    height: max-content;
   }
 
   .content-footer {
     width: 100%;
     padding: 10px;
+    padding: 20px 10px;
   }
 
   .information-footer {
@@ -803,12 +810,6 @@ body {
 
   .space-information {
     flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-  }
-
-  .space-information>div:nth-child(2) {
-    align-self: center;
   }
 
   .social-link-links {
