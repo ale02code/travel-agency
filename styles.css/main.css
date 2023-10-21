@@ -542,6 +542,7 @@ body {
 .information-footer {
   display: flex;
   justify-content: space-between;
+  gap: 12px;
 }
 
 .information-footer>div>h6 {
@@ -602,7 +603,6 @@ body {
 }
 
 @media (max-width:575px) {
-
   body {
     width: 100vw;
     overflow-x: hidden;
@@ -611,6 +611,7 @@ body {
   .container-nav {
     backdrop-filter: blur(0px);
     background-color: rgba(0, 0, 0, .7);
+    overflow: hidden;
   }
 
   .show-phone {
@@ -783,6 +784,223 @@ body {
 
   .our-blogs-cards {
     grid-template-columns: 1fr;
+    grid-template-rows: repeat(1fr, 4);
+    width: 100%;
+  }
+
+  /* Footer */
+  .footer {
+    width: 100vw;
+    height: max-content;
+  }
+
+  .content-footer {
+    width: 100%;
+    padding: 10px;
+    padding: 20px 10px;
+  }
+
+  .information-footer {
+    gap: 1rem;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .about-us-footer {
+    width: 100%;
+  }
+
+  .space-information {
+    flex-wrap: wrap;
+  }
+
+  .social-link-links {
+    justify-content: center;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 980px) {
+  body {
+    width: 100vw;
+    overflow-x: hidden;
+  }
+
+  .container-nav {
+    backdrop-filter: blur(0px);
+    background-color: rgba(0, 0, 0, .7);
+    overflow: hidden;
+  }
+
+  .show-phone {
+    display: block;
+    color: #ffffff;
+    position: absolute;
+    top: 8px;
+    right: 1rem;
+  }
+
+  .show-phone>i {
+    font-size: 2.2rem;
+  }
+
+  .container-close-navbar {
+    display: none;
+    font-size: 2.4rem;
+  }
+
+  .container_item-list {
+    display: none;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.4rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    z-index: 300;
+  }
+
+  .container_item-list>li {
+    background-color: #000;
+    border-radius: 4px;
+    padding: 4px 6px;
+    color: #ffffff;
+    list-style-type: none;
+    font-size: 1.4rem;
+    width: 90%;
+    text-align: center;
+  }
+
+  .container_item-list>li:last-child {
+    background-color: var(--color-botton);
+  }
+
+  /* information-general */
+  .general-information {
+    width: 100vw;
+    padding: 20px;
+  }
+
+  .content_general-information {
+    width: 90%;
+  }
+
+  .content_general-information>h1 {
+    font-size: 3rem;
+  }
+
+  .content_general-information>p {
+    font-size: 2.1rem;
+  }
+
+  /* About-us */
+  .about-us {
+    width: 100vw;
+    padding: 20px 10px;
+    height: max-content;
+  }
+
+  .content-about-us {
+    grid-template-columns: 1fr;
+    place-content: center;
+    gap: 1.7rem;
+  }
+
+  .content-about-us>div:last-child {
+    grid-row: 1/-1;
+  }
+
+  .visualizers-about-us {
+    height: 290px;
+    width: 240px;
+  }
+
+  .texts-about-us>h3 {
+    font-size: 1.8rem;
+  }
+
+  .texts-about-us>p {
+    font-size: 1rem;
+  }
+
+  /* Explore */
+  .container-explore {
+    width: 100vw;
+    padding: 20px 10px;
+    height: max-content;
+  }
+
+  .explore-content {
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100vh, 60vh;
+    padding: 0;
+    gap: 1.8rem;
+  }
+
+  .icon-text-explore {
+    margin-top: 4px;
+  }
+
+  .explore>h3 {
+    font-size: 1.8rem;
+  }
+
+  .explore h4 {
+    font-size: 1.1rem;
+  }
+
+  .explore>p {
+    font-size: 1rem;
+  }
+
+  .images-explore-collage-content {
+    height: 250px;
+    width: 250px;
+  }
+
+  /* popular-Destination */
+  .destination {
+    width: 100vw;
+    padding: 20px 10px;
+    height: max-content;
+  }
+
+  .destination-content {
+    height: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .text-destination>h3 {
+    font-size: 1.8rem;
+  }
+
+  .text-destination>p {
+    font-size: 1rem;
+  }
+
+  .gallery-popular {
+    overflow-x: scroll;
+    justify-content: center;
+  }
+
+  .gallery-popular::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Blog */
+  .our-blog-content {
+    width: 100vw;
+    padding: 20px 10px;
+    height: max-content;
+  }
+
+  .our-blogs-cards {
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(1fr, 4);
     width: 100%;
   }
