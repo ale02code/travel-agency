@@ -767,6 +767,7 @@ body {
 
   .gallery-popular {
     overflow-x: scroll;
+    justify-content: start;
   }
 
   .gallery-popular::-webkit-scrollbar {
@@ -782,7 +783,7 @@ body {
 
   .our-blogs-cards {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(1fr, 4);
     width: 100%;
   }
 
