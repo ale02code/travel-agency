@@ -5,56 +5,53 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description"
-    content="To be a travel page so that you can enjoy a reliable and comfortable company for the entire travel issue, with reliable features and developed by Christopher Chacon">
+    content="Discover breathtaking destinations with our travel agency. Explore pristine beaches, bustling cities, and unforgettable adventures. Start your journey today!">
   <meta name="author" content="Christopher Chacon">
-  <title>Responsive Design</title>
+  <title>Travel agency</title>
   <link rel="shortcut icon" href="imgs/icon.avif" type="image/x-icon">
-  <link rel="stylesheet" href="styles.css/main.css">
-  <link rel="stylesheet" href="styles.css/Login.css">
-  <!-- Google fonts -->
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/Login.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600&display=swap" rel="stylesheet">
-  <!-- Bootstrap -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 </head>
 
 <body>
-  <div class="content_window-login-off">
-  </div>
+  <div class="window-login-off"></div>
 
-  <header>
-    <figure class="container_title-image">
-      <img class="title-image" id="home" src="imgs/Title image.webp" alt="title-image">
+  <header class="header">
+    <figure class="header__title-image-container">
+      <img class="header__title-image" id="home" src="imgs/Title image.webp" alt="title-image">
     </figure>
 
-    <div class="container-nav">
-      <div class="content-nav">
-        <nav class="main-nav">
-          <figure id="container-logo" class="container_present-icon">
-            <img class="present-icon" src="imgs/icon-main.avif" alt="icon-main">
+    <div class="header__nav-container">
+      <div class="header__nav-content">
+        <nav class="nav">
+          <figure class="nav__logo-container" id="container-logo">
+            <img class="nav__logo" src="imgs/favicon.png" alt="icon-main">
           </figure>
-          <p id="open-navbar" class="container-open-navbar show-phone"><i class="bi bi-list"></i></p>
-          <p id="close-navbar" class="container-close-navbar show-phone"><i class="bi bi-x"></i></p>
-          <ul id="menu" class="container_item-list">
-            <li class="item-list item-hover-close"><a href="#home">Home</a></li>
-            <li class="item-list item-hover-close"><a href="#about-us">About us</a></li>
-            <li class="item-list item-hover-close"><a href="#explore">Explore</a></li>
-            <li class="item-list item-hover-close"><a href="#popular">Popular</a></li>
-            <li class="item-list item-hover-close"><a href="#home">Register</a></li>
-            <li id="" class="login-text item-hover-close">Login</li>
+          <p id="open-navbar" class="nav__toggle nav__toggle--open show-phone"><i class="bi bi-list"></i></p>
+          <p id="close-navbar" class="nav__toggle nav__toggle--close show-phone"><i class="bi bi-x"></i></p>
+          <ul id="menu" class="nav__menu">
+            <li class="nav__menu-item"><a href="#home">Home</a></li>
+            <li class="nav__menu-item"><a href="#about-us">About us</a></li>
+            <li class="nav__menu-item"><a href="#explore">Explore</a></li>
+            <li class="nav__menu-item"><a href="#popular">Popular</a></li>
+            <li class="nav__menu-item"><a href="#home">Register</a></li>
+            <li class="nav__menu-item nav__menu-item--login">Login</li>
           </ul>
         </nav>
       </div>
     </div>
 
-    <div class="general-information">
-      <section class="content_general-information">
+    <div class="header__info">
+      <section class="header__info-content">
         <h1>Enjoy the holidays together with us</h1>
         <p>Discover the world with our travel agency! Explore breathtaking destinations, from pristine beaches to
-          bustling cities
-          and unforgettable adventures await. Start your journey today and let us make your travel dreams a reality!</p>
-        <div class="content-button-general-information">
+          bustling cities and unforgettable adventures await. Start your journey today and let us make your travel
+          dreams a reality!</p>
+        <div class="header__info-button">
           <button><a href="#blogs">Read more</a></button>
         </div>
       </section>
@@ -62,115 +59,105 @@
   </header>
 
   <section class="about-us" id="about-us">
-    <div class="content-about-us">
-      <div class="visualizers-about-us">
-        <img class="first-image-about-us" src="imgs/Place 2.webp" alt="img-visualizer-about-us">
-        <img class="second-image-about-us" src="imgs/place 11.webp" alt="img-visualizer-about-us ">
+    <div class="about-us__content">
+      <div class="about-us__visuals">
+        <img class="about-us__image about-us__image--first" src="imgs/Place 2.webp" alt="img-visualizer-about-us">
+        <img class="about-us__image about-us__image--second" src="imgs/place 11.webp" alt="img-visualizer-about-us">
       </div>
-      <div class="texts-about-us">
+      <div class="about-us__texts">
         <h5>About us</h5>
         <h3>Investigate all corners of the world with us</h3>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis commodi fugiat ullam. Beatae exercitationem
-          accusamus sunt, minus tempora voluptatum necessitatibus sint? Unde consequuntur nam molestiae nulla rerum
-          voluptatibus saepe excepturi?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit...</p>
         <a href="#blog">Explore now</a>
       </div>
     </div>
   </section>
 
-  <section class="container-explore" id="explore">
-    <div class="explore-content">
-      <div class="explore">
+  <section class="explore" id="explore">
+    <div class="explore__content">
+      <div class="explore__text">
         <h5>Explore</h5>
         <h3>The best features for you</h3>
-        <div class="icon-text-explore">
-          <div class="content-icon-explore circle-1">
-            <i class="bi bi-person-walking"></i>
-          </div>
-          <div>
+
+        <div class="explore__feature">
+          <div class="explore__icon explore__icon--circle1"><i class="bi bi-person-walking"></i></div>
+          <div class="explore__description">
             <h4>Best tour guide</h4>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium voluptate quam voluptates liberosit
-              amet consectetur
-              alias aut!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
           </div>
         </div>
-        <div class="icon-text-explore">
-          <div class="content-icon-explore circle-2">
-            <i class="bi bi-person-arms-up"></i>
-          </div>
-          <div>
-            <h4>reliable tour</h4>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium voluptate quam voluptates liberosit
-              amet consectetur
-              alias aut!</p>
+
+        <div class="explore__feature">
+          <div class="explore__icon explore__icon--circle2"><i class="bi bi-person-arms-up"></i></div>
+          <div class="explore__description">
+            <h4>Reliable tour</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
           </div>
         </div>
-        <div class="icon-text-explore">
-          <div class="content-icon-explore circle-3">
-            <i class="bi bi-person-raised-hand"></i>
-          </div>
-          <div>
+
+        <div class="explore__feature">
+          <div class="explore__icon explore__icon--circle3"><i class="bi bi-person-raised-hand"></i></div>
+          <div class="explore__description">
             <h4>Friendly price</h4>
-            <p>Lorem isit amet consectetur psum dolor, sit amet consectetur adipisicing elit. Laudantium voluptate quam
-              voluptates libero
-              alias aut!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
           </div>
         </div>
       </div>
-      <div>
-        <div class="images-explore-collage-container">
-          <div class="images-explore-collage-content">
-            <img class="images-explore one-img-explore" src="imgs/Place 2.webp" alt="picture of explore gallery">
-            <img class="images-explore two-img-explore" src="imgs/Place 3.webp" alt="picture of explore gallery">
-            <img class="images-explore three-img-explore" src="imgs/Place 4.webp" alt="picture of explore gallery">
-            <img class="images-explore four-img-explore" src="imgs/Place 5.webp" alt="picture of explore gallery">
-          </div>
+
+      <div class="explore__gallery">
+        <div class="explore__gallery-content">
+          <img class="explore__gallery-image explore__gallery-image--1" src="imgs/Place 2.webp" alt="gallery">
+          <img class="explore__gallery-image explore__gallery-image--2" src="imgs/Place 3.webp" alt="gallery">
+          <img class="explore__gallery-image explore__gallery-image--3" src="imgs/Place 4.webp" alt="gallery">
+          <img class="explore__gallery-image explore__gallery-image--4" src="imgs/Place 5.webp" alt="gallery">
         </div>
       </div>
     </div>
   </section>
 
   <main class="destination" id="popular">
-    <div class="destination-content">
-      <div class="text-destination">
+    <div class="destination__content">
+      <div class="destination__texts">
         <h5>Popular</h5>
         <h3>Popular Destinations</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis suscipit laborum cupiditate beatae
-          exercitationem accusantium maiores perferendis molestias recusandae itaque.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
       </div>
-      <div class="gallery-popular">
-        <div class="content_picture-popular">
-          <img src="imgs/Place 6.webp" alt="picture-popular">
-          <div class="show-price">
-            <div class="description-place-popular">
+
+      <div class="destination__gallery">
+        <div class="destination__card">
+          <img src="imgs/Place 6.webp" alt="popular">
+          <div class="destination__price-info">
+            <div class="destination__description">
               <h6>Name of the place</h6>
               <p>Lorem ipsum dolor sit amet consectetur.</p>
             </div>
-            <div class="price-place-popular">
+            <div class="destination__price">
               <p>$1000</p>
             </div>
           </div>
         </div>
-        <div class="content_picture-popular">
-          <img src="imgs/place 7.webp" alt="picture-popular">
-          <div class="show-price">
-            <div class="description-place-popular">
+
+        <div class="destination__card">
+          <img src="imgs/place 7.webp" alt="popular">
+          <div class="destination__price-info">
+            <div class="destination__description">
               <h6>Name of the place</h6>
               <p>Lorem ipsum dolor sit amet consectetur.</p>
             </div>
-            <div class="price-place-popular">
+            <div class="destination__price">
               <p>$1000</p>
             </div>
           </div>
         </div>
-        <div class="content_picture-popular">
-          <img src="imgs/place 8.webp" alt="picture-popular">
-          <div class="show-price">
-            <div class="description-place-popular">
+
+        <div class="destination__card">
+          <img src="imgs/place 8.webp" alt="popular">
+          <div class="destination__price-info">
+            <div class="destination__description">
               <h6>Name of the place</h6>
               <p>Lorem ipsum dolor sit amet consectetur.</p>
             </div>
-            <div class="price-place-popular">
+            <div class="destination__price">
               <p>$1000</p>
             </div>
           </div>
@@ -179,100 +166,97 @@
     </div>
   </main>
 
-  <section class="our-blogs" id="blogs">
-    <div class="our-blog-content">
-      <div class="text-blogs-present">
+  <section class="blogs" id="blogs">
+    <div class="blogs__content">
+      <div class="blogs__header">
         <h5>Blog</h5>
         <h3>Our Blogs</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam officiis unde expedita dolores
-          possimus qua, animi debits dolore at!, animi debitis dolore at!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
       </div>
-      <div class="our-blogs-cards">
-        <div class="container_card-blog">
-          <picture class="content_image-blog">
-            <img src="imgs/Place 5.webp" alt="image-blog">
+
+      <div class="blogs__cards">
+        <div class="blogs__card">
+          <picture class="blogs__image">
+            <img src="imgs/Place 5.webp" alt="blog">
           </picture>
-          <div class="card-information-blog">
+          <div class="blogs__info">
             <h4>Enjoy the beautiful of the city</h4>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum, sunt explicabo corrupti dolor atque
-              blanditiis!</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit...</p>
             <a href="#home">Enjoy now!</a>
           </div>
         </div>
-        <div class="container_card-blog">
-          <picture class="content_image-blog">
-            <img src="imgs/place 9.webp" alt="image-blog">
+
+        <div class="blogs__card">
+          <picture class="blogs__image">
+            <img src="imgs/place 9.webp" alt="blog">
           </picture>
-          <div class="card-information-blog">
+          <div class="blogs__info">
             <h4>Enjoy the beautiful of the town</h4>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum, sunt explicabo corrupti dolor atque
-              blanditiis!</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit...</p>
             <a href="#home">Enjoy now!</a>
           </div>
         </div>
-        <div class="container_card-blog">
-          <picture class="content_image-blog">
-            <img src="imgs/Place 2.webp" alt="image-blog">
+
+        <div class="blogs__card">
+          <picture class="blogs__image">
+            <img src="imgs/Place 2.webp" alt="blog">
           </picture>
-          <div class="card-information-blog">
+          <div class="blogs__info">
             <h4>Enjoy the beautiful of the beach</h4>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum, sunt explicabo corrupti dolor atque
-              blanditiis!</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit...</p>
             <a href="#home">Enjoy now!</a>
           </div>
         </div>
-        <div class="container_card-blog">
-          <picture class="content_image-blog">
-            <img src="imgs/Place 4.webp" alt="image-blog">
+
+        <div class="blogs__card">
+          <picture class="blogs__image">
+            <img src="imgs/Place 4.webp" alt="blog">
           </picture>
-          <div class="card-information-blog">
+          <div class="blogs__info">
             <h4>Enjoy the beautiful of the lake</h4>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum, sunt explicabo corrupti dolor atque
-              blanditiis!</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit...</p>
             <a href="#home">Enjoy now!</a>
           </div>
         </div>
       </div>
-    </div>
     </div>
   </section>
 
   <footer class="footer">
-    <div class="content-footer">
-      <div class="information-footer">
-        <div class="about-us-footer">
-          <h6>More about us</h6>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam enim reiciendis neque quisquam asperiores
-            harum fugiat dolorem iusto eos dolore!</p>
+    <div class="footer__content">
+      <div class="footer__about">
+        <h6>More about us</h6>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+      </div>
+
+      <div class="footer__sections">
+        <div class="footer__company">
+          <h6>Company</h6>
+          <p>Blogs</p>
+          <p>Explore</p>
+          <p>About us</p>
+          <p>Beautiful places</p>
         </div>
-        <div class="space-information">
-          <div class="company-footer">
-            <h6>Company</h6>
-            <p>Blogs</p>
-            <p>Explore</p>
-            <p>About us</p>
-            <p>Beatiful places</p>
-          </div>
-          <div class="contact-me-footer">
-            <h6>Contact me</h6>
-            <p>chchacon02@gmail.com</p>
-            <p>+503 72878961</p>
-          </div>
-          <div class="social-media-footer">
-            <h6>Social Media</h6>
-            <div class="social-link-links">
-              <p><a href="https://github.com/Blade-24" target="_blank"><i class="bi bi-github"></i></a></p>
-              <p><a href="https://twitter.com/Tsk_002_" target="_blank"><i class="bi bi-twitter-x"></i></a></p>
-              <p><a href="https://wa.me/72878961" target="_blank"><i class="bi bi-whatsapp"></i></a></p>
-            </div>
+
+        <div class="footer__contact">
+          <h6>Contact me</h6>
+          <p>chchacon02@gmail.com</p>
+          <p>+503 72878961</p>
+        </div>
+
+        <div class="footer__social">
+          <h6>Social Media</h6>
+          <div class="footer__social-links">
+            <p><a href="https://github.com/Blade-24" target="_blank"><i class="bi bi-github"></i></a></p>
+            <p><a href="https://twitter.com/Tsk_002_" target="_blank"><i class="bi bi-twitter-x"></i></a></p>
+            <p><a href="https://wa.me/72878961" target="_blank"><i class="bi bi-whatsapp"></i></a></p>
           </div>
         </div>
       </div>
     </div>
-    <div class="container_credits-footer">
-      <div class="credits-footer">
-        <h6>Design and developed made by Christopher Chacón</h6>
-      </div>
+
+    <div class="footer__credits">
+      <h6>Design and developed made by Christopher Chacón</h6>
     </div>
   </footer>
 
