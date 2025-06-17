@@ -15,6 +15,11 @@
   --color-change-background: #EEEEEE;
   --container-with: 80%;
   --padding-login: 15px;
+  --padding-section: 2rem 0;
+  --title-size: 2.2rem;
+  --subtitle-size: 1.8rem;
+  --text-size: 1rem;
+  --separation-size: 1.2rem;
 }
 
 body {
