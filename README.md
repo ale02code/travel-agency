@@ -1,11 +1,36 @@
-# Responsive-Design
-This project is created for the practice of responsive design.
-It is a travel page that invites you to travel with us, showing some characteristics of the company and some advantages.
+# **Travel Agency**
 
-Technologies used
-HTML5
-CSS3
-JavaScript
+Travel Agency es una pagina web creada para poder publicitar el viajar a lugar o rincon del mundo
+Combina diferentes tecnologias totalmente nativas para el desarollo de esta web
+ofreciendo buena visibilidad al negocio
 
-I hope you like it, you can give your opinion to improve, it has been my first page which I have done from start to finish.
-Thank you! 🥊
+## 🚀 **Características**
+
+- 📊 publicia en la web el nogocio
+- 🖨️
+- 🌐 
+- 🧱 
+
+## 📁 **Estructura del Proyecto**
+
+- `index.html` – Contiene toda la información de la web
+- `styles/` – Estilos de la web tanto globales como especificos
+- `js/` – Scripts adaptados a partes de la web para darle funcionalidad
+
+## 🧩 **Tecnologías Utilizadas**
+
+- **Frontend**:
+  - HTML
+  - CSS
+  - JS
+
+---
+
+## 📫 **Contacto**
+
+¿Tienes preguntas o sugerencias? ¡Contáctame!
+
+- **Correo Electrónico**: [chchacon02@gmail.com](mailto:chchacon02@gmail.com)
+- **WhatsApp**: [ale02code](https://wa.me/72878961)
+- **Tik Tok**: [ale02code](https://www.tiktok.com/@ale02code)
+- **Instagram**: [ale02code](https://www.instagram.com/ale02.code/)
