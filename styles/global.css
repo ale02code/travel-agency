@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Slab', serif;
+  font-size: 18px;
+}
+
+:root {
+  --color-footer: #053B50;
+  --color-botton: #176B87;
+  --color-texts: #ffaa11;
+  --color-texts-seconds: #dfdbdb;
+  --color-texts-thrids: #383838;
+  --color-change-background: #EEEEEE;
+  --container-with: 80%;
+  --padding-login: 15px;
+}
+
+body {
+  overflow-x: hidden;
+}

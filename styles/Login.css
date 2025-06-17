@@ -1,14 +1,3 @@
-/* :root {
-  --color-footer: #053B50;
-  --color-botton: #176B87;
-  --color-texts: #ffaa11;
-  --color-texts-seconds: #dfdbdb;
-  --color-texts-thrids: #383838;
-  --color-change-background: #EEEEEE;
-  --container-with: 80%;
-  --padding-login: 15px;
-} */
-
 .content_window-login-off {
   display: none;
 }
@@ -26,7 +15,7 @@
   z-index: 200;
 }
 
-.login-text {
+.nav__menu-item--login {
   background-color: var(--color-botton);
   border-radius: 4px;
   padding: 2px 6px;

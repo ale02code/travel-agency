@@ -8,12 +8,13 @@ ofreciendo buena visibilidad al negocio
 
 - 📊 publicia en la web el nogocio
 - 🖨️
-- 🌐 
-- 🧱 
+- 🌐
+- 🧱
 
 ## 📁 **Estructura del Proyecto**
 
 - `index.html` – Contiene toda la información de la web
+- `imgs` – Imagenes necesarias y mostradas en la página
 - `styles/` – Estilos de la web tanto globales como especificos
 - `js/` – Scripts adaptados a partes de la web para darle funcionalidad
 
