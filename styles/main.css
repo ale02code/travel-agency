@@ -158,8 +158,8 @@
 }
 
 .about-us__visuals {
-  width: 60%;
-  height: 60%;
+  width: 400px;
+  height: 400px;
   padding: 35px;
   position: relative;
 }
@@ -304,13 +304,13 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center;  
 }
 
 .explore__gallery-content {
   display: grid;
-  height: 65%;
-  width: 75%;
+  height: 375px;
+  width: 400px;
   place-items: center;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
