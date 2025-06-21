@@ -820,13 +820,14 @@
   }
 }
 
-@media (min-width: 576px) and (max-width: 980px) {
+/* Media query for tablets */
+@media (min-width: 576px) and (max-width: 1080px) {
   body {
     width: 100vw;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
   }
 
-  .container-nav {
+  .nav__container {
     backdrop-filter: blur(0px);
     background-color: rgba(0, 0, 0, .7);
     overflow: hidden;
@@ -844,12 +845,12 @@
     font-size: 2.2rem;
   }
 
-  .container-close-navbar {
+  .nav__toggle--close {
     display: none;
     font-size: 2.4rem;
   }
 
-  .container_item-list {
+  .nav__menu {
     display: none;
     height: 100vh;
     width: 100vw;
@@ -863,7 +864,7 @@
     z-index: 300;
   }
 
-  .container_item-list>li {
+  .nav__menu>li {
     background-color: #000;
     border-radius: 4px;
     padding: 4px 6px;
@@ -874,26 +875,26 @@
     text-align: center;
   }
 
-  .container_item-list>li:last-child {
+  .nav__menu>li:last-child {
     background-color: var(--color-botton);
   }
 
   /* information-general */
-  .general-information {
+  .header__info {
     width: 100vw;
     padding: 20px;
   }
 
-  .content_general-information {
+  .header__info-content {
     width: 90%;
   }
 
-  .content_general-information>h1 {
+  .header__info-content>h1 {
     font-size: 3rem;
   }
 
-  .content_general-information>p {
-    font-size: 2.1rem;
+  .header__info-content>p {
+    font-size: 1.5rem;
   }
 
   /* About-us */
@@ -903,105 +904,101 @@
     height: max-content;
   }
 
-  .content-about-us {
+  .about-us__content {
     grid-template-columns: 1fr;
     place-content: center;
     gap: 1.7rem;
+    padding: 20px;
   }
 
-  .content-about-us>div:last-child {
+  .about-us__content>div:last-child {
     grid-row: 1/-1;
   }
 
-  .visualizers-about-us {
-    height: 290px;
-    width: 240px;
+  .about-us__visuals {
+    height: 400px;
+    width: 400px;
   }
 
-  .texts-about-us>h3 {
+  .about-us__texts>h3 {
     font-size: 1.8rem;
   }
 
-  .texts-about-us>p {
+  .about-us__texts>p {
     font-size: 1rem;
   }
 
   /* Explore */
-  .container-explore {
+  .explore {
     width: 100vw;
     padding: 20px 10px;
-    height: max-content;
   }
 
-  .explore-content {
+  .explore__content {
     height: 100%;
     width: 100%;
     grid-template-columns: 1fr;
     grid-template-rows: 100vh, 60vh;
-    padding: 0;
+    padding: 20px;
     gap: 1.8rem;
   }
 
-  .icon-text-explore {
-    margin-top: 4px;
-  }
-
-  .explore>h3 {
+  .explore__text>h3 {
     font-size: 1.8rem;
   }
 
-  .explore h4 {
+  .explore__description h4 {
     font-size: 1.1rem;
   }
 
-  .explore>p {
+  .explore__description p {
     font-size: 1rem;
   }
 
-  .images-explore-collage-content {
-    height: 250px;
-    width: 250px;
+  .explore__gallery-content {
+    height: 400px;
+    width: 400px;
   }
 
   /* popular-Destination */
   .destination {
     width: 100vw;
     padding: 20px 10px;
-    height: max-content;
   }
 
-  .destination-content {
+  .destination__content {
     height: 100%;
     justify-content: space-evenly;
-    align-items: center;
+    justify-content: center;
+    align-items: start;
   }
 
-  .text-destination>h3 {
+  .destination__texts>h3 {
     font-size: 1.8rem;
   }
 
-  .text-destination>p {
+  .destination__texts>p {
     font-size: 1rem;
   }
 
-  .gallery-popular {
+  .destination__gallery {
     overflow-x: scroll;
-    justify-content: center;
+    justify-content: start;
   }
 
-  .gallery-popular::-webkit-scrollbar {
+  .destination__gallery::-webkit-scrollbar {
     display: none;
   }
 
   /* Blog */
-  .our-blog-content {
+  .blogs {
     width: 100vw;
     padding: 20px 10px;
     height: max-content;
   }
 
-  .our-blogs-cards {
-    grid-template-columns: 1fr 1fr;
+  .blogs__cards {
+    grid-template-columns: 1fr;
     grid-template-rows: repeat(1fr, 4);
     width: 100%;
   }
@@ -1009,30 +1006,21 @@
   /* Footer */
   .footer {
     width: 100vw;
-    height: max-content;
   }
 
-  .content-footer {
+  .footer__content {
     width: 100%;
     padding: 10px;
     padding: 20px 10px;
   }
 
-  .information-footer {
+  .footer__content {
     gap: 1rem;
     flex-direction: column;
     width: 100%;
   }
 
-  .about-us-footer {
+  .footer__about {
     width: 100%;
-  }
-
-  .space-information {
-    flex-wrap: wrap;
-  }
-
-  .social-link-links {
-    justify-content: center;
   }
 }
