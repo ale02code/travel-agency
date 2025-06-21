@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="styles/global.css">
   <link rel="stylesheet" href="styles/main.css">
   <link rel="stylesheet" href="styles/login.css">
+  <link rel="stylesheet" href="styles/animations.css">
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -49,7 +50,7 @@
       </div>
     </div>
 
-    <div class="header__info">
+    <div class="header__info scroll-in-hidden">
       <section class="header__info-content">
         <h1>Enjoy the holidays together with us</h1>
         <p>Discover the world with our travel agency! Explore breathtaking destinations, from pristine beaches to
@@ -64,7 +65,7 @@
 
   <section class="about-us" id="about-us">
     <div class="about-us__content">
-      <div class="about-us__visuals">
+      <div class="about-us__visuals scroll-track-card">
         <img class="about-us__image about-us__image--first" src="imgs/place-2.webp" alt="img-visualizer-about-us"
           draggable="false">
         <img class="about-us__image about-us__image--second" src="imgs/place-11.webp" alt="img-visualizer-about-us"
@@ -187,7 +188,7 @@
       </div>
 
       <div class="blogs__cards">
-        <div class="blogs__card">
+        <div class="blogs__card scroll-in-hidden">
           <picture class="blogs__image">
             <img src="imgs/place-5.webp" alt="blog" loading="lazy" draggable="false">
           </picture>
@@ -198,7 +199,7 @@
           </div>
         </div>
 
-        <div class="blogs__card">
+        <div class="blogs__card scroll-in-hidden">
           <picture class="blogs__image">
             <img src="imgs/place-9.webp" alt="blog" loading="lazy" draggable="false">
           </picture>
@@ -209,7 +210,7 @@
           </div>
         </div>
 
-        <div class="blogs__card">
+        <div class="blogs__card scroll-in-hidden">
           <picture class="blogs__image">
             <img src="imgs/place-2.webp" alt="blog" loading="lazy" draggable="false">
           </picture>
@@ -220,7 +221,7 @@
           </div>
         </div>
 
-        <div class="blogs__card">
+        <div class="blogs__card scroll-in-hidden">
           <picture class="blogs__image">
             <img src="imgs/place-4.webp" alt="blog" loading="lazy" draggable="false">
           </picture>
@@ -276,8 +277,9 @@
     </div>
   </footer>
 
-  <script src="js/login.js"></script>
   <script src="js/navBar.js"></script>
+  <script src="js/login.js"></script>
+  <script src="js/animations.js"></script>
 </body>
 
 </html>

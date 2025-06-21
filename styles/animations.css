@@ -1,0 +1,28 @@
+.scroll-in-hidden {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 0.6s ease-out;
+}
+
+.scroll-in-show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.scroll-in-left-hidden {
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: all 0.6s ease-out;
+}
+
+.scroll-in-left-show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.scroll-track-card {
+  opacity: 0;
+  transform: translateY(100px); /* empieza abajo */
+  transition: none; /* sin animación automática */
+  will-change: transform, opacity;
+}

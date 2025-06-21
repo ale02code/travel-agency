@@ -683,7 +683,7 @@
   /* About-us */
   .about-us {
     width: 100vw;
-    padding: 20px 10px;
+    padding: var(--padding-section-mobile);
   }
 
   .about-us__content {
@@ -712,8 +712,7 @@
   /* Explore */
   .explore {
     width: 100vw;
-    padding: 20px 10px;
-    height: max-content;
+    padding: var(--padding-section-mobile);
   }
 
   .explore__content {
@@ -748,7 +747,7 @@
   /* Destination */
   .destination {
     width: 100vw;
-    padding: 20px 10px;
+    padding: var(--padding-section-mobile);
   }
 
   .destination__content {
@@ -775,8 +774,7 @@
   /* Blog */
   .blogs__content {
     width: 100vw;
-    padding: 20px 10px;
-    height: max-content;
+    padding: var(--padding-section-mobile);
   }
 
   .blogs__cards {
@@ -788,7 +786,6 @@
   /* Footer */
   .footer {
     width: 100vw;
-    height: max-content;
   }
 
   .footer__content {
