@@ -1,8 +1,8 @@
-.content_window-login-off {
+.window-login-off {
   display: none;
 }
 
-.content_window-login-on {
+.window-login-on {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -156,7 +156,7 @@
   }
 }
 
-@media (min-width: 576px) and (max-width: 980px) {
+@media (min-width: 576px) and (max-width: 1080px) {
   .window-login {
     width: 60vw;
     height: max-content;

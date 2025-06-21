@@ -1,134 +1,99 @@
 "use strict";
 
-const LoginText = document.querySelector(".login-text");
-const WindowLoginOFF = document.querySelector(".content_window-login-off");
+const LoginText = document.querySelector(".nav__menu-item--login");
+const WindowLoginOFF = document.querySelector(".window-login-off");
 
-const WindowLogin = document.createElement('div');
-WindowLogin.classList.add("window-login");
+// Utilidad para crear un elemento con clases y atributos opcionales
+function createElement(tag, options = {}) {
+  const el = document.createElement(tag);
+  if (options.class) el.classList.add(...options.class.split(" "));
+  if (options.text) el.textContent = options.text;
+  if (options.src) el.src = options.src;
+  if (options.htmlFor) el.setAttribute("for", options.htmlFor);
+  if (options.type) el.setAttribute("type", options.type);
+  if (options.required) el.required = true;
+  if (options.href) el.href = options.href;
+  return el;
+}
 
-const ContainerImageLogin = document.createElement('section');
-ContainerImageLogin.classList.add("container_image-login");
+// Crear estructura
+const WindowLogin = createElement("div", { class: "window-login" });
+const ContainerImageLogin = createElement("section", { class: "container_image-login" });
+const ContentImageLogin = createElement("figure", { class: "content_image-login" });
+const ImageLogin = createElement("img", { src: "imgs/place-5.webp" });
 
-const ContentImageLogin = document.createElement('figure');
-ContentImageLogin.classList.add("content_image-login");
+const Login = createElement("section", { class: "login" });
+const ButtonBackLogin = createElement("div", { class: "button_back-login" });
+const BackLogin = createElement("p", { class: "back-login", text: "Back" });
+const BackLoginLogo = createElement("i", { class: "bi bi-arrow-bar-right" });
 
-const ImageLogin = document.createElement('img');
-ImageLogin.src = "imgs/Place 5.webp";
+const ContainerTitleLogin = createElement("div", { class: "title-login" });
+const TitleLogin = createElement("h2", { text: "Login" });
 
-const Login = document.createElement('section');
-Login.classList.add("login");
+const FormLogin = createElement("form", { class: "form-login" });
+const LabelEmail = createElement("label", { text: "Write your e-mail", htmlFor: "email" });
+const InputEmail = createElement("input", { type: "email", required: true });
 
-const ButtonBackLogin = document.createElement('div');
-ButtonBackLogin.classList.add("button_back-login");
+const LabelPassword = createElement("label", { text: "Write your password", htmlFor: "password" });
+const InputPassword = createElement("input", { type: "password", required: true });
 
-const BackLogin = document.createElement('p');
-BackLogin.textContent = "Back";
-BackLogin.classList.add("back-login");
+const RecoverPassword = createElement("div", { class: "recover-password" });
+const RecoverPasswordLink = createElement("a", {
+  href: "#home",
+  text: "Have you forgotten your password?"
+});
+RecoverPasswordLink.style.textDecoration = "underline";
 
-const BackLoginLogo = document.createElement('i');
-BackLoginLogo.classList.add("bi", "bi-arrow-bar-right");
+const SendForm = createElement("button", { class: "send-login", text: "Send" });
+const BreakLine = createElement("div", { class: "break-line" });
+const SocialLogin = createElement("div", { class: "social-login" });
 
-const ContainerTitleLogin = document.createElement('div');
-ContainerTitleLogin.classList.add("title-login");
+const socialIcons = [
+  { class: "bi bi-google" },
+  { class: "bi bi-twitter-x" },
+  { class: "bi bi-facebook" }
+];
 
-const TitleLogin = document.createElement('h2');
-TitleLogin.textContent = "Login";
+socialIcons.forEach(({ class: iconClass }) => {
+  const iconContainer = createElement("div", { class: "social-icon" });
+  const icon = createElement("i", { class: iconClass });
+  iconContainer.appendChild(icon);
+  SocialLogin.appendChild(iconContainer);
+});
 
-const FormLogin = document.createElement('form');
-FormLogin.classList.add("form-login");
-
-const LabelEmail = document.createElement('label');
-LabelEmail.textContent = "Write your e-mail";
-LabelEmail.setAttribute("for", "email");
-
-const InputEmail = document.createElement('input');
-InputEmail.setAttribute("type", "email");
-InputEmail.setAttribute("required", "true");
-
-const LabelPassword = document.createElement('label');
-LabelPassword.textContent = "Write your password";
-LabelPassword.setAttribute("for", "password");
-
-const InputPassword = document.createElement('input');
-InputPassword.setAttribute("type", "password");
-InputPassword.setAttribute("required", "true");
-
-const RecoverPassword = document.createElement('div');
-RecoverPassword.classList.add("recover-password");
-
-const RecoverPasswordLink = document.createElement('a');
-RecoverPasswordLink.href = "#home";
-RecoverPasswordLink.textContent = "Have you forgotten your password?";
-
-const SendForm = document.createElement('button');
-SendForm.textContent = "Send";
-SendForm.classList.add("send-login");
-
-const BreakLine = document.createElement('div');
-BreakLine.classList.add("break-line");
-
-const SocialLogin = document.createElement('div');
-SocialLogin.classList.add("social-login");
-
-const SocialIcon1 = document.createElement('div');
-SocialIcon1.classList.add("social-icon");
-
-const Icon1 = document.createElement('i');
-Icon1.classList.add("bi", "bi-google");
-
-const SocialIcon2 = document.createElement('div');
-SocialIcon2.classList.add("social-icon");
-
-const Icon2 = document.createElement('i');
-Icon2.classList.add("bi", "bi-twitter-x");
-
-const SocialIcon3 = document.createElement('div');
-SocialIcon3.classList.add("social-icon");
-
-const Icon3 = document.createElement('i');
-Icon3.classList.add("bi", "bi-facebook");
-
+// Armar DOM
 WindowLoginOFF.appendChild(WindowLogin);
 
-WindowLogin.appendChild(ContainerImageLogin);
 ContainerImageLogin.appendChild(ContentImageLogin);
 ContentImageLogin.appendChild(ImageLogin);
+WindowLogin.appendChild(ContainerImageLogin);
 
-WindowLogin.appendChild(Login);
-Login.appendChild(ButtonBackLogin);
 ButtonBackLogin.appendChild(BackLogin);
 BackLogin.appendChild(BackLoginLogo);
+Login.appendChild(ButtonBackLogin);
 
-Login.appendChild(ContainerTitleLogin);
 ContainerTitleLogin.appendChild(TitleLogin);
+Login.appendChild(ContainerTitleLogin);
 
-Login.appendChild(FormLogin);
 FormLogin.appendChild(LabelEmail);
 FormLogin.appendChild(InputEmail);
 FormLogin.appendChild(LabelPassword);
 FormLogin.appendChild(InputPassword);
+RecoverPassword.appendChild(RecoverPasswordLink);
 FormLogin.appendChild(RecoverPassword);
-RecoverPassword.appendChild(RecoverPasswordLink).style.textDecoration = "underline";
 FormLogin.appendChild(SendForm);
+Login.appendChild(FormLogin);
 
 Login.appendChild(BreakLine);
-
 Login.appendChild(SocialLogin);
-SocialLogin.appendChild(SocialIcon1);
-SocialLogin.appendChild(SocialIcon2);
-SocialLogin.appendChild(SocialIcon3);
+WindowLogin.appendChild(Login);
 
-SocialIcon1.appendChild(Icon1);
-SocialIcon2.appendChild(Icon2);
-SocialIcon3.appendChild(Icon3);
-
-const LoginIdInput = document.getElementById("login-text-input");
-
+// Eventos
 LoginText.addEventListener("click", (e) => {
-  e.preventDefault()
-  WindowLoginOFF.classList.replace("content_window-login-off", "content_window-login-on");
+  e.preventDefault();
+  WindowLoginOFF.classList.replace("window-login-off", "window-login-on");
 });
 
 BackLogin.addEventListener("click", () => {
-  WindowLoginOFF.classList.replace("content_window-login-on", "content_window-login-off");
+  WindowLoginOFF.classList.replace("window-login-on", "window-login-off");
 });

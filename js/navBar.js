@@ -4,8 +4,8 @@ const openMenu = document.getElementById("open-navbar");
 const closeMenu = document.getElementById("close-navbar");
 const menu = document.getElementById("menu");
 const containerLogo = document.getElementById("container-logo");
-const itemNavClick = document.querySelectorAll('.item-hover-close');
-const containerNav = document.querySelector('.container-nav');
+const itemNavClick = document.querySelectorAll('.nav__menu-item');
+const containerNav = document.querySelector('.header__nav-container');
 
 const openMenuFunct = () => {
   containerNav.style.transition = '0s'
