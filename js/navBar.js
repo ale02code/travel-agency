@@ -6,6 +6,7 @@ const menu = document.getElementById("menu");
 const containerLogo = document.getElementById("container-logo");
 const itemNavClick = document.querySelectorAll('.nav__menu-item');
 const containerNav = document.querySelector('.header__nav-container');
+const nav = document.querySelector('.nav');
 
 const openMenuFunct = () => {
   containerNav.style.transition = '0s'
@@ -13,6 +14,7 @@ const openMenuFunct = () => {
   closeMenu.style.display = "block"
   openMenu.style.display = "none";
   containerLogo.style.display = "none"
+  nav.style.justifyContent = "center";
 }
 
 const closeMenuFunct = () => {
@@ -23,15 +25,20 @@ const closeMenuFunct = () => {
 }
 
 openMenu.addEventListener("click", function (e) {
-  openMenuFunct()
+  openMenuFunct();
 })
 
-closeMenu.addEventListener("click", function () {
-  closeMenuFunct()
+closeMenu.addEventListener("click", function (e) {
+  closeMenuFunct();
 })
 
-itemNavClick.forEach(item => {
-  item.addEventListener('click', function () {
-    closeMenuFunct()
+// check width of screen
+let width = window.innerWidth;
+
+if (width <= 1020) {
+  itemNavClick.forEach(item => {
+    item.addEventListener('click', function () {
+      closeMenuFunct()
+    })
   })
-})
+}

@@ -148,7 +148,7 @@
     height: max-content;
     display: flex;
     justify-content: center;
-    padding: 35px 0px;
+    padding: 20px 0px;
   }
 
   .content_image-login {
@@ -156,7 +156,7 @@
   }
 }
 
-@media (min-width: 576px) and (max-width: 1080px) {
+@media (min-width: 576px) and (max-width: 1020px) {
   .window-login {
     width: 60vw;
     height: max-content;

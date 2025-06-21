@@ -6,6 +6,10 @@
   font-size: 18px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --color-footer: #053B50;
   --color-botton: #176B87;

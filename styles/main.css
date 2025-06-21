@@ -595,8 +595,10 @@
   font-size: 1.1rem;
 }
 
-.footer__credits-content span {
+.footer__credits-content a {
   font-weight: bold;
+  text-decoration: underline;
+  color: #ffffff;
 }
 
 /* Media query for phones */
@@ -818,7 +820,7 @@
 }
 
 /* Media query for tablets */
-@media (min-width: 576px) and (max-width: 1080px) {
+@media (min-width: 576px) and (max-width: 1020px) {
   body {
     width: 100vw;
     overflow-x: hidden;
