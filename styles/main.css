@@ -141,7 +141,6 @@
 
 /* About-us */
 .about-us {
-  height: 100vh;
   width: var(--container-with);
   margin: auto;
   overflow: hidden;
@@ -218,7 +217,6 @@
 }
 
 .explore__content {
-  height: 100vh;
   width: var(--container-with);
   margin: auto;
   display: grid;
@@ -304,7 +302,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;  
+  align-items: center;
 }
 
 .explore__gallery-content {
@@ -346,7 +344,6 @@
   width: var(--container-with);
   margin: auto;
   overflow: hidden;
-  min-height: 100vh;
   padding: var(--padding-section);
   display: flex;
   flex-direction: column;
@@ -436,7 +433,6 @@
 }
 
 .blogs__content {
-  height: 100vh;
   width: var(--container-with);
   margin: auto;
 }
@@ -609,11 +605,11 @@
 
 @media (max-width:575px) {
   body {
-    width: 100vw;
     overflow-x: hidden;
+    width: 100vw;
   }
 
-  .container-nav {
+  .header__nav-container {
     backdrop-filter: blur(0px);
     background-color: rgba(0, 0, 0, .7);
     overflow: hidden;
@@ -625,18 +621,19 @@
     position: absolute;
     top: 8px;
     right: 1rem;
+    cursor: pointer;
   }
 
   .show-phone>i {
     font-size: 2rem;
   }
 
-  .container-close-navbar {
+  .nav__toggle--close {
     display: none;
     font-size: 2.2rem;
   }
 
-  .container_item-list {
+  .nav__menu {
     display: none;
     height: 100vh;
     width: 100vw;
@@ -650,7 +647,7 @@
     z-index: 300;
   }
 
-  .container_item-list>li {
+  .nav__menu>li {
     background-color: #000;
     border-radius: 4px;
     padding: 4px 6px;
@@ -661,25 +658,25 @@
     text-align: center;
   }
 
-  .container_item-list>li:last-child {
+  .nav__menu>li:last-child {
     background-color: var(--color-botton);
   }
 
   /* information-general */
-  .general-information {
+  .header__info {
     width: 100vw;
     padding: 20px;
   }
 
-  .content_general-information {
+  .header__info-content {
     width: 90%;
   }
 
-  .content_general-information>h1 {
+  .header__info-content>h1 {
     font-size: 2.3rem;
   }
 
-  .content_general-information>p {
+  .header__info-content>p {
     font-size: 1rem;
   }
 
